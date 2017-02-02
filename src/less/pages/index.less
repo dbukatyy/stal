@@ -1,0 +1,88 @@
+body,
+html {
+	min-height: 100vh;
+	min-width: 100%;
+	font-size: @base-font;
+	color: @c-dgray;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&:focus {
+		text-decoration: none;
+		outline: none;
+		color: inherit;
+	}
+}
+
+
+// first
+.first {
+	background: url('../img/red-dash.png') 50% no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: @c-white;
+	position: relative;
+
+	&__inner {
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		padding-top: 120px;
+		overflow: hidden;
+
+		.row {
+			display: flex;
+		}
+	}
+
+	&__txt {
+		font-weight: bold;
+		font-size: 1.3em;
+		text-transform: uppercase;
+
+		p {
+			margin: 0;
+		}
+	}
+}
+
+.manager {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	p {
+		margin: 0;
+		text-transform: uppercase;
+	}
+
+	&__btn {
+		width: 100%;
+	}
+
+	&__icon {
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 3%;
+		width: 20px;
+		height: 20px;
+		background: url("../img/head.png") 50% no-repeat;
+		background-size: contain;
+	}
+}
+
+.we-do {
+	height: 200px;
+	background: #000;
+}

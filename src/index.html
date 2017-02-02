@@ -7,14 +7,37 @@
 	<meta name="description" content="Test">
 	<meta name="author" content="ittech"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-
 	//= template/head.html
 </head>
 <body>
-	//= template/header.html
+	//= template/aside.html
+
+	<div id="panel" class="content">
+
+		<section class="first">
+			//= template/header.html
+
+			<div class="container first__inner">
+				<div class="row">
+					<div class="col-sm-7 first__txt">
+						<p>
+							ПРОИЗВОДСТВО МЕТАЛЛОЧЕРЕПИЦЫ, ПРОФНАСТИЛА, ФАЛЬЦЕВОЙ КРОВЛИ, ВОДООТЛИВНОЙ СИСТЕМЫ <br>И СОПУТСТВУЮЩИХ ЭЛЕМЕНТОВ
+						</p>
+					</div>
+					<div class="col-sm-4 col-sm-offset-1 manager">
+						<p>о наличии продукта можно уточнить у менеджера</p>
+						<button class="manager__btn buttn buttn_def">задать вопрос менеджеру <i class="manager__icon"></i></button>
+					</div>
+				</div>
+			</div>
+		</section><!--first-->
+
+		<section class="we-do"></section>
+
+		//= template/footer.html
+	</div><!--content-->
 
 
-	//= template/footer.html
 	//= template/foot.html
 </body>
 </html>

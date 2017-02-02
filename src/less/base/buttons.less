@@ -1,1 +1,17 @@
-style
+.buttn {
+	padding: 10px;
+	border: none;
+	color: @c-white;
+	text-transform: uppercase;
+	font-size: .78em;
+
+	&_def {
+		background: @c-blue;
+		transition: all .3s;
+
+		&:hover {
+			background: darken(@c-blue, 10%);
+		}
+	}
+
+}
