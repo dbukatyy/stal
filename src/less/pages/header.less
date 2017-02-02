@@ -6,6 +6,10 @@
 	left: 0;
 	right: 0;
 
+	.container {
+		position: relative;
+	}
+
 	&__inner {
 		display: flex;
 		flex-wrap: wrap;
@@ -17,7 +21,7 @@
 	&__contacts {
 		position: absolute;
 		top: -10px;
-		right: 0;
+		right: 10px;
 		font-size: .7em;
 
 		a {
@@ -53,6 +57,7 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+	-webkit-box-align: end;
 
 	&__item {
 		color: @c-dgray;
@@ -84,6 +89,16 @@
 				&:after {
 					width: 100%;
 				}
+			}
+		}
+
+		&_border {
+			border: 1px solid transparent;
+			margin: 0;
+			padding: 5px 10px;
+
+			&:hover {
+				border: 1px solid @c-orange;
 			}
 		}
 	}

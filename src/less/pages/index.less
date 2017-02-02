@@ -3,13 +3,13 @@ html {
 	min-height: 100vh;
 	min-width: 100%;
 	font-size: @base-font;
-	color: @c-dgray;
+	color: @c-white;
 }
 
-img {
-	max-width: 100%;
-	max-height: 100%;
-}
+// img {
+// 	max-width: 100%;
+// 	max-height: 100%;
+// }
 
 a {
 
@@ -34,8 +34,9 @@ a {
 	position: relative;
 
 	&__inner {
-		min-height: 100vh;
+		height: 100vh;
 		display: flex;
+		justify-content: center;
 		align-items: center;
 		padding-top: 120px;
 		overflow: hidden;
@@ -65,6 +66,7 @@ a {
 	p {
 		margin: 0;
 		text-transform: uppercase;
+		width: 100%;
 	}
 
 	&__btn {
@@ -82,7 +84,114 @@ a {
 	}
 }
 
+
+// we-do
 .we-do {
-	height: 200px;
-	background: #000;
+	padding: 35px 0;
+	background: @c-blue;
+
+	.container {
+		position: relative;
+	}
+
+	&__link {
+		position: absolute;
+		right: 15px;
+		bottom: 0;
+		color: @c-white;
+		transition: all .3s;
+	}
+
+	&__title {
+		margin-bottom: 70px;
+	}
+}
+
+.title {
+	font-size: 1.67em;
+	text-transform: uppercase;
+	font-weight: 400;
+
+	&_bordered {
+		position: relative;
+
+		&:after {
+			content: '';
+			display: inline-block;
+			height: 2px;
+			width: 50px;
+			position: absolute;
+			left: 0;
+			bottom: -20px;
+			background: @c-white;
+		}
+
+		&-dark {
+			&:after {
+				background: @c-dgray;
+			}
+		}
+	}
+
+
+}
+
+// products
+.products {
+	color: @c-dgray;
+	padding: 70px 0;
+
+	&__header {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content:space-between;
+		align-items: center;
+	}
+
+	&__item {
+		width: 270px;
+		height: 270px;
+		margin-top: 30px;
+		overflow: hidden;
+		text-align: center;
+		position: relative;
+
+		img {
+			height: 100%;
+			width: auto;
+			vertical-align: middle;
+		}
+
+		&:hover {
+			.over {
+				transform: scale(1);
+			}
+		}
+	}
+}
+
+.over {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(220,73,49,.9);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px;
+	transition: all .3s;
+	transform: scale(0);
+	cursor: pointer;
+	font-size: 1.33em;
+	color: @c-white;
 }
