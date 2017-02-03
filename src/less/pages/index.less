@@ -24,6 +24,18 @@ a {
 	}
 }
 
+button:focus,
+input:focus,
+input:active,
+textarea:active,
+textarea:focus {
+	outline: none;
+}
+
+.content {
+	min-height: 100vh;
+	padding-bottom: 175px;
+}
 
 // first
 .first {
@@ -35,6 +47,7 @@ a {
 
 	&__inner {
 		height: 100vh;
+		min-height: 100vh !important;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -43,6 +56,7 @@ a {
 
 		.row {
 			display: flex;
+			flex-wrap: wrap;
 		}
 	}
 
@@ -156,17 +170,19 @@ a {
 	}
 
 	&__item {
-		width: 270px;
+		width: 24%;
 		height: 270px;
-		margin-top: 30px;
+		margin-top: 15px;
 		overflow: hidden;
 		text-align: center;
 		position: relative;
 
 		img {
-			height: 100%;
-			width: auto;
-			vertical-align: middle;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
 		}
 
 		&:hover {
@@ -183,15 +199,144 @@ a {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: rgba(220,73,49,.9);
+	background: rgba(233,70,44,.9);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	padding: 30px;
-	transition: all .3s;
+	transition: all .3s .2s;
 	transform: scale(0);
 	cursor: pointer;
 	font-size: 1.33em;
 	color: @c-white;
+
+	p {
+		text-transform: uppercase;
+		// font-size: 1.1em;
+		margin: 0;
+		padding: 0 15px;
+	}
+
+	i {
+		font-size: 1.2em;
+	}
+
+	a {
+
+		&:hover {
+			background: rgba(255,255,255,.9);
+			color: @c-orange;
+		}
+	}
 }
+
+.link {
+	transition: all .3s;
+	color: @c-white;
+	text-transform: uppercase;
+	padding: 5px 10px;
+	border: 1px solid @c-white;
+	font-size: .8em;
+}
+
+// about
+.about {
+	background: url('../img/blue-dash.jpg') no-repeat 50%;
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 40px 0 80px;
+
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-end;
+	}
+
+	&__media {
+		video {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__txt {
+		p {
+			margin: 30px 0;
+			font-size: .77em;
+		}
+
+		button {
+			min-width: 170px;
+		}
+	}
+}
+
+// info
+.info {
+	padding: 80px 0;
+	text-align: center;
+	font-size: 1.55em;
+	background: @c-blue;
+}
+
+// feedback
+.feedback {
+	padding: 100px 0 75px;
+	background: url(../img/braun-dash.jpg) no-repeat 50%;
+	background-size: cover;
+	background-attachment: fixed;
+
+	&__txt {
+		h2 {
+			margin-top: 15px;
+		}
+	}
+}
+
+.form {
+	&__field {
+		background-color: transparent;
+		border: 1px solid @c-white;
+		display: block;
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 40px;
+	}
+
+	label {
+		text-transform: uppercase;
+		font-size: .77em;
+	}
+
+	textarea {
+		resize: none;
+		height: 220px;
+	}
+
+	&__btn {
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+		padding: 20px 10px;
+	}
+}
+
+.contacts {
+	i {
+		color: darken(@c-orange, 8%);
+	}
+
+	&__link {
+		color: @c-white;
+
+		&_space {
+			margin-left: 30px !important;
+		}
+	}
+}
+
+.map {
+	height: 490px;
+}
+

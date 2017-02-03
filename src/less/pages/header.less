@@ -47,6 +47,8 @@
 		display: flex;
 
 		img {
+			max-width: 100%;
+			max-height: 100%;
 			margin: auto;
 		}
 	}
@@ -64,8 +66,16 @@
 		transition: all .3s;
 		margin: 0 10px;
 
+		&:focus {
+			color: @c-orange;
+		}
+
 		&:hover {
 			color: @c-orange;
+		}
+
+		i {
+			vertical-align: middle;
 		}
 
 		&_border-bottom {
@@ -101,6 +111,14 @@
 				border: 1px solid @c-orange;
 			}
 		}
+
+		&_dark {
+			color: @c-dblue2;
+
+			&:hover {
+				color: @c-lblue;
+			}
+		}
 	}
 
 	&_colum {
@@ -110,10 +128,60 @@
 			margin: 10px 0;
 		}
 	}
+
+	&_aleft {
+		align-items: flex-start;
+	}
 }
 
 .icon-phone {
 	&:before{
 		transform: rotate(90deg);
+	}
+}
+
+.after() {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	height: 5px;
+	width: 100%;
+	background: @c-orange;
+	left: 0;
+}
+
+.hamburger {
+	width: 30px;
+	height: 5px;
+	background: @c-orange;
+	position: absolute;
+	right: 20px;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	cursor: pointer;
+	transition: all .3s;
+	display: none;
+
+	&:after {
+		.after();
+		bottom: 10px;
+	}
+
+	&:before {
+		.after();
+		top: 10px;
+	}
+
+	&_close {
+		transform: rotate(45deg);
+		&:after {
+			bottom: 0px;
+			transform: rotate(90deg);
+		}
+
+		&:before {
+				display: none;
+			}
 	}
 }

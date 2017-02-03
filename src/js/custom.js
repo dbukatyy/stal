@@ -10,6 +10,11 @@ jQuery(document).ready(function () {
 	    'tolerance': 70,
 	    'side': 'right'
 	  });
+
+	 $('.hamburger').on('click', function (e) {
+	 	$(this).toggleClass('hamburger_close');
+	 	slideout.toggle();
+	 });
 });
 
 

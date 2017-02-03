@@ -4,13 +4,23 @@
 	color: @c-white;
 	text-transform: uppercase;
 	font-size: .78em;
+	transition: all .3s;
 
 	&_def {
 		background: @c-blue;
-		transition: all .3s;
 
 		&:hover {
-			background: darken(@c-blue, 10%);
+			background: lighten(@c-blue, 15%);
+			transform: translateY(3px);
+		}
+	}
+
+	&_err {
+		background: @c-orange;
+
+		&:hover {
+			background: lighten(@c-orange, 20%);
+			transform: translateY(3px);
 		}
 	}
 
