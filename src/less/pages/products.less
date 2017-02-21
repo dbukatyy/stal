@@ -1,0 +1,115 @@
+.our-products {
+	padding: 60px 0 100px;
+
+	.container {
+		position: relative;
+	}
+
+	&__pogination {
+		position: relative;
+	}
+}
+
+.product {
+	padding: 25px 0;
+	color: @c-dgray;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	&__img {
+		height: 270px;
+		// width: 100%;
+		background: url('../../img/product.jpg') no-repeat 50%;
+		background-size: cover;
+	}
+
+	&__link {
+		color: @c-dgray;
+		transition: all .3s;
+
+		&:hover {
+			color: @c-gray;
+		}
+	}
+
+	&__info {
+		padding: 0 25px;
+	}
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.page {
+	padding: 0 20px;
+}
+
+.siema-btn {
+	color: @c-dgray;
+
+	&:hover {
+		color: @c-orange;
+	}
+
+	&:focus {
+		color: @c-orange;		
+	}
+}
+
+.next {
+	position: absolute;
+	right: 30px;
+	bottom: 0;
+	&:after {
+		content: ">";
+		vertical-align: middle;
+		margin-left: 5px;
+	}
+}
+
+.prev {
+	position: absolute;
+	left: 30px;
+	bottom: 0;
+	&:before {
+		content: "<";
+		vertical-align: middle;
+		margin-right: 5px;
+	}
+}
+
+.pagination {
+	text-align: center;
+
+	&__item {
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		padding: 0 10px;
+		border: 1px solid @c-dgray;
+		color: @c-dgray;
+
+		&:hover {
+			border: 1px solid @c-orange;
+			color: @c-orange;
+		}
+
+		&:focus {
+			color: @c-orange;
+			border: 1px solid @c-orange;
+		} 
+
+		&_active {
+			border: 1px solid @c-orange;
+			color: @c-orange;
+		}
+	}
+}

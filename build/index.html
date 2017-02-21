@@ -19,13 +19,27 @@
 </head>
 <body>
 	<div id="menu" class="aside-menu">
-		<nav  class="list list_colum">
-			<a href="" class="list__item list__item_border-bottom">главная</a>
-			<a href="" class="list__item list__item_border-bottom">продукция</a>
-			<a href="" class="list__item list__item_border-bottom">галерея</a>
-			<a href="" class="list__item list__item_border-bottom">прайс</a>
-			<a href="" class="list__item list__item_border-bottom">инструкции</a>
-			<a href="" class="list__item list__item_border-bottom">о нас</a>
+		<nav >
+			<ul class="list list_colum">
+				<li class="list__item list__item_border-bottom"><a href="">главная</a></li>
+				<li class="list__item list__item_border-bottom list__item_arr">
+					<a href="">продукция</a>
+					<ul class="sub-menu list list_colum">
+						<li class="list__item list__item_border-bottom"><a href="">металлочерепица</a></li>
+						<li class="list__item list__item_border-bottom"><a href="">профнастил</a></li>
+						<li class="list__item list__item_border-bottom"><a href="">фальцевая картина</a></li>
+						<li class="list__item list__item_border-bottom"><a href="">водосточная система</a></li>
+						<li class="list__item list__item_border-bottom"><a href="">комплектующие элементы кровли</a></li>
+						<li class="list__item list__item_border-bottom"><a href="">софит</a></li>
+						<li class="list__item list__item_border-bottom"><a href="">штакетник</a></li>
+						<li class="list__item list__item_border-bottom"><a href="">сопутствующие товары</a></li>
+					</ul>
+				</li>
+				<li class="list__item list__item_border-bottom"><a href="">галерея</a></li>
+				<li class="list__item list__item_border-bottom"><a href="">прайс</a></li>
+				<li class="list__item list__item_border-bottom"><a href="">инструкции</a></li>
+				<li class="list__item list__item_border-bottom"><a href="">о нас</a></li>
+			</ul>
 		</nav>
 	</div>
 
@@ -38,13 +52,27 @@
 						<a class="header__logo" href="">
 							<img src="img/logo.png" alt="breststal">
 						</a>
-						<nav class="list header__menu">
-							<a href="" class="list__item list__item_border-bottom">главная</a>
-							<a href="" class="list__item list__item_border-bottom">продукция</a>
-							<a href="" class="list__item list__item_border-bottom">галерея</a>
-							<a href="" class="list__item list__item_border-bottom">прайс</a>
-							<a href="" class="list__item list__item_border-bottom">инструкции</a>
-							<a href="" class="list__item list__item_border-bottom">о нас</a>
+						<nav class="header__menu">
+							<ul class="list">
+								<li class="list__item list__item_border-bottom"><a href="">главная</a></li>
+								<li class="list__item list__item_border-bottom list__item_arr">
+									<a href="">продукция</a>
+									<ul class="sub-menu list list_colum">
+										<li class="list__item list__item_border-bottom"><a href="">металлочерепица</a></li>
+										<li class="list__item list__item_border-bottom"><a href="">профнастил</a></li>
+										<li class="list__item list__item_border-bottom"><a href="">фальцевая картина</a></li>
+										<li class="list__item list__item_border-bottom"><a href="">водосточная система</a></li>
+										<li class="list__item list__item_border-bottom"><a href="">комплектующие элементы кровли</a></li>
+										<li class="list__item list__item_border-bottom"><a href="">софит</a></li>
+										<li class="list__item list__item_border-bottom"><a href="">штакетник</a></li>
+										<li class="list__item list__item_border-bottom"><a href="">сопутствующие товары</a></li>
+									</ul>
+								</li>
+								<li class="list__item list__item_border-bottom"><a href="">галерея</a></li>
+								<li class="list__item list__item_border-bottom"><a href="">прайс</a></li>
+								<li class="list__item list__item_border-bottom"><a href="">инструкции</a></li>
+								<li class="list__item list__item_border-bottom"><a href="">о нас</a></li>
+							</ul>
 						</nav>
 					</div>
 					<div class="header__contacts">
@@ -191,13 +219,14 @@
 						<h2 class="title">свяжитесь с нами и мы ответим на ваши вопросы</h2>
 						<p>Также при возникновении вопросов вы можете обратиться в центральный офис компании.</p>
 						<p>Контакты главного офиса</p>
-						<div  class="contacts list list_colum list_aleft">
-							<a href="tel:0487702777" class="list__item contacts__link"><i class="icon-phone"></i> 048 77-02-777</a>
-							<a href="tel:0973291159" class="list__item contacts__link contacts__link_space">097-329-11-59</a>
-							<a href="tel:0800504010" class="list__item contacts__link contacts__link_space">0800-50-40-10</a>
-							<a href="" class="list__item contacts__link"><i class="icon-location "></i> г. Брест, ул. Учительская, 41/1</a>
-							<a href="mailto:uns@ukrnavi.com" class="list__item contacts__link"><i class="icon-mail"></i> breststal@.mail.ru</a>
-						</div>
+						<address  class="contacts list list_colum list_aleft vcard">
+							<span class="fn org" style="display:none;">Breststal</span>
+							<a href="tel:0487702777" class="list__item contacts__link tel"><i class="icon-phone"></i> 048 77-02-777</a>
+							<a href="tel:0973291159" class="list__item contacts__link contacts__link_space tel">097-329-11-59</a>
+							<a href="tel:0800504010" class="list__item contacts__link contacts__link_space tel">0800-50-40-10</a>
+							<a href="" class="list__item contacts__link locality"><i class="icon-location "></i> г. Брест, ул. Учительская, 41/1</a>
+							<a href="mailto:uns@ukrnavi.com" class="list__item contacts__link"><i class="icon-mail email"></i> breststal@.mail.ru</a>
+						</address>
 					</div>
 						<div class="col-sm-6 col-md-5 col-sm-pull-6">
 							<form name="form1" id="form1" class="form">

@@ -141,8 +141,17 @@ textarea:focus {
 		}
 
 		&-dark {
+			color: @c-dgray;
 			&:after {
 				background: @c-dgray;
+			}
+		}
+
+		&-right {
+
+			&:after {
+				left: auto;
+				right: 0;
 			}
 		}
 	}
@@ -176,6 +185,7 @@ textarea:focus {
 		overflow: hidden;
 		text-align: center;
 		position: relative;
+		cursor: pointer;
 
 		img {
 			position: absolute;
