@@ -126,6 +126,10 @@ textarea:focus {
 	text-transform: uppercase;
 	font-weight: 400;
 
+	&_dark {
+		color: @c-dgray;
+	}
+
 	&_bordered {
 		position: relative;
 
@@ -152,6 +156,20 @@ textarea:focus {
 			&:after {
 				left: auto;
 				right: 0;
+			}
+		}
+
+		&-long {
+			position: relative;
+			&:after {
+				position: absolute;
+				content: '';
+				display: inline-block;
+				height: 1px;
+				background: @c-blue;	
+				bottom: -10px;
+				left: -70%;
+				width: 100%;
 			}
 		}
 	}

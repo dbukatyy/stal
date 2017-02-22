@@ -19,16 +19,20 @@ jQuery(document).ready(function () {
 
 	 // pagination slider
 
-	 var siema = new Siema({
-		  selector: '.siema',
-		  duration: 200,
-		  easing: 'ease-out',
-		  perPage: 1,
-		  startIndex: 0,
-		  draggable: true,
-		  threshold: 20,
-		  loop: false,
-	});
+	if (document.querySelector('.siema')) {
+
+		 var siema = new Siema({
+			  selector: '.siema',
+			  duration: 200,
+			  easing: 'ease-out',
+			  perPage: 1,
+			  startIndex: 0,
+			  draggable: true,
+			  threshold: 20,
+			  loop: false,
+		});
+	}
+
 
 	$('.prev').on('click', function (e) {
 		e.preventDefault();
@@ -55,6 +59,22 @@ jQuery(document).ready(function () {
 
 		$(this).addClass('pagination__item_active');
 		$(this).siblings('.pagination__item').removeClass('pagination__item_active');
+	});
+
+
+	$('.category-list__link_droped').on('click', function (e) {
+		e.preventDefault();
+
+		$('.pallite-wraper').slideToggle();
+	});
+
+	$('.pallite__item').on('click', function (e) {
+		e.stopPropagation();
+
+		var color = $(this).data('color');
+
+		$('.pallite-about').filter('[data-color=' +  color + ']').show();
+		$('.pallite-about').not('[data-color=' + color + ']').hide();
 	});
 
 });
