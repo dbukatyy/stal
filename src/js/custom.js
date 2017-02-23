@@ -77,6 +77,44 @@ jQuery(document).ready(function () {
 		$('.pallite-about').not('[data-color=' + color + ']').hide();
 	});
 
+	$(document).on('scroll', function (e) {
+		var scrollTop = $(this).scrollTop();
+
+  //   	if (scrollTop > 200) {
+
+  //  			$('.header').addClass('header_sticked');
+
+  //   	} else  {
+  //   		$('.header').removeClass('header_sticked');
+  //   	}
+
+  		$('.first').css('background-position-y',(90- scrollTop*1.6));
+	});
+
+	// var fixed = document.querySelector('.header');
+
+ //    slideout.on('translate', function(translated) {
+ //      fixed.style.transform = 'translateX(' + translated + 'px)';
+ //    });
+
+ //    slideout.on('beforeopen', function () {
+ //      fixed.style.transition = 'transform 300ms ease';
+ //      fixed.style.transform = 'translateX(-256px)';
+ //    });
+
+ //    slideout.on('beforeclose', function () {
+ //      fixed.style.transition = 'transform 300ms ease';
+ //      fixed.style.transform = 'translateX(0px)';
+ //    });
+
+ //    slideout.on('open', function () {
+ //      fixed.style.transition = '';
+ //    });
+
+ //    slideout.on('close', function () {
+ //      fixed.style.transition = '';
+ //    });
+
 });
 
 function triggerPage (currentSlide) {
