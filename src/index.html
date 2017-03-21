@@ -12,33 +12,36 @@
 <body>
 	//= template/aside.html
 
+			//= template/header.html
 	<div id="panel" class="content">
 
 		<section class="first">
-			//= template/header.html
 
 			<div class="container first__inner">
-				<div class="row">
 					<div class="first__txt">
 						<p>
 							ПРОИЗВОДСТВО МЕТАЛЛОЧЕРЕПИЦЫ, ПРОФНАСТИЛА, ФАЛЬЦЕВОЙ КРОВЛИ, водосточной СИСТЕМЫ И СОПУТСТВУЮЩИХ ЭЛЕМЕНТОВ в бресте
 						</p>
 					</div>
-					<!-- <div class="col-sm-5 col-md-4 col-md-offset-1 manager">
-						<p>о наличии продукта можно уточнить у менеджера</p>
-						<button class="manager__btn buttn buttn_def">задать вопрос менеджеру <i class="manager__icon"></i></button>
-					</div> -->
-				</div>
+					<div class="consultant">
+						<button>ОСТАВИТЬ ЗАЯВКУ НА БЕСПЛАТНУЮ  КОНСУЛЬТАЦИЮ СО СПЕЦИАЛИСТОМ</button>
+						<form  action="" class="consultant__form" name="consultant">
+							<input type="text" class="consultant__field" name="name" placeholder="Ваше имя">
+							<input type="tel" class="consultant__field" name="tel" placeholder="Ваш телефон">
+							<input type="email" class="consultant__field" name="email" placeholder="Ваш email">
+							<input type="submit" class="consultant__btn" value="отправить">
+						</form>
+					</div>
 			</div>
 		</section><!--first-->
 
 		<section class="we-do">
 			<div class="container">
 				<h2 class="we-do__title title title_bordered ">уважаемые клиенты</h2>
-				<p>Можно сколько угодно спорить о приемуществах разных видов кровельных покрытий, одно остается неоспоримым - металлочерепица и профнастил - это новая, высоконадежная защита Вашего дома на многие годы.</p>
-				<p>60-е годы прошлого столетия ознаменовались появлением на мировом рынке нового строительного материала - металлочерепицы. С момента выхода на рынок кровельных материалов и по сегодняшний день металлочерепица знимает одну из лидирующих позиций и имееет широкие рекомендации в промышденном и гражданском строительстве.</p>
-				<p>Основой для изготовления металлочерепицы служит холоднокатная горячеоцинкованная сталь с тольщиной листа от 0,45 до 0,5 мм, с полимерным покрытием.</p>
-				<a href="" class="we-do__link">далее...</a>
+				<p>Приветствуем Вас на сайте СООО "БРЕСТСТАЛЬ"!</p>
+				<p>Здесь Вы найдете всю интересующую Вас информацию  о продукции нашей фирмы, познакомитесь с видами металлочерепицы и профнастила,  узнаете о конструкции кровли и водосточной системы, составе металлочерепицы. </p>
+				<p>С помощью таблицы сравнительных характеристик сожете оценить достоинства того или иного вида покрытий. Найдете полезные советы по эксплуатации металлочерепицы,а также контактную информацию, для связи с нами.</p>
+				<!-- <a href="" class="we-do__link">далее...</a> -->
 			</div>
 		</section><!--we-do-->
 
@@ -47,11 +50,18 @@
 				<div class="products__header">
 					<h2 class="title title_bordered title_bordered-dark">наша продукция</h2>
 					<nav class="products__menu list">
-						<a href="" class="list__item list__item_border">всё</a>
-						<a href="" class="list__item list__item_border">металлочерепица</a>
-						<a href="" class="list__item list__item_border">профнастил</a>
-						<a href="" class="list__item list__item_border">декоративный профиль</a>
-						<a href="" class="list__item list__item_border">комплектующие</a>
+						<div class="products__menu-nav">
+							<a class="first-block" href=""><</a>
+							<a class="second-block" href="">></a>
+						</div>
+						<a href="" data-slide="first" class="list__item list__item_border">металлочерепица</a>
+						<a href="" data-slide="first" class="list__item list__item_border">профнастил</a>
+						<a href="" data-slide="first" class="list__item list__item_border">декоративный профиль</a>
+						<a href="" data-slide="first" class="list__item list__item_border">комплектующие</a>
+						<a href="" data-slide="second" class="list__item list__item_border">металлочерепица1</a>
+						<a href="" data-slide="second" class="list__item list__item_border">профнастил1</a>
+						<a href="" data-slide="second" class="list__item list__item_border">декоративный профиль1</a>
+						<a href="" data-slide="second" class="list__item list__item_border">комплектующие1</a>
 					</nav>
 				</div>
 				<div class="products__list">
@@ -88,7 +98,7 @@
 						</div>
 					</div>
 					<div class="products__item">
-						<img src="img/dash5.jpg" alt="">
+						<img src="img/dash5.png" alt="">
 						<div class="over">
 							<p>декоративный <br>профиль</p>
 							<i class="icon-plus"></i>
@@ -104,7 +114,7 @@
 						</div>
 					</div>
 					<div class="products__item">
-						<img src="img/dash7.jpg" alt="">
+						<img src="img/dash7.png" alt="">
 						<div class="over">
 							<p>декоративный <br>профиль</p>
 							<i class="icon-plus"></i>
@@ -112,7 +122,7 @@
 						</div>
 					</div>
 					<div class="products__item">
-						<img src="img/dash1.jpg" alt="">
+						<img src="img/dash8.png" alt="">
 						<div class="over">
 							<p>декоративный <br> профиль</p>
 							<i class="icon-plus"></i>

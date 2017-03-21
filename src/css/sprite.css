@@ -1,0 +1,150 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon {
+  display: inline-block;
+}
+.icon-1 {
+  background-image: url(../img/sprite.png);
+  background-position: -331px 0px;
+  width: 52px;
+  height: 52px;
+}
+.icon-10 {
+  background-image: url(../img/sprite.png);
+  background-position: -403px -72px;
+  width: 15px;
+  height: 8px;
+}
+.icon-1r {
+  background-image: url(../img/sprite.png);
+  background-position: -288px -329px;
+  width: 52px;
+  height: 52px;
+}
+.icon-2 {
+  background-image: url(../img/sprite.png);
+  background-position: -120px -137px;
+  width: 52px;
+  height: 52px;
+}
+.icon-2r {
+  background-image: url(../img/sprite.png);
+  background-position: -259px 0px;
+  width: 52px;
+  height: 52px;
+}
+.icon-3 {
+  background-image: url(../img/sprite.png);
+  background-position: -259px -72px;
+  width: 52px;
+  height: 52px;
+}
+.icon-3r {
+  background-image: url(../img/sprite.png);
+  background-position: -259px -144px;
+  width: 52px;
+  height: 52px;
+}
+.icon-4 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -257px;
+  width: 52px;
+  height: 52px;
+}
+.icon-4r {
+  background-image: url(../img/sprite.png);
+  background-position: -72px -257px;
+  width: 52px;
+  height: 52px;
+}
+.icon-5 {
+  background-image: url(../img/sprite.png);
+  background-position: -144px -257px;
+  width: 52px;
+  height: 52px;
+}
+.icon-5r {
+  background-image: url(../img/sprite.png);
+  background-position: -216px -257px;
+  width: 52px;
+  height: 52px;
+}
+.icon-6 {
+  background-image: url(../img/sprite.png);
+  background-position: -403px 0px;
+  width: 52px;
+  height: 52px;
+}
+.icon-6r {
+  background-image: url(../img/sprite.png);
+  background-position: -331px -72px;
+  width: 52px;
+  height: 52px;
+}
+.icon-7 {
+  background-image: url(../img/sprite.png);
+  background-position: -331px -144px;
+  width: 52px;
+  height: 52px;
+}
+.icon-7r {
+  background-image: url(../img/sprite.png);
+  background-position: -331px -216px;
+  width: 52px;
+  height: 52px;
+}
+.icon-8 {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -329px;
+  width: 52px;
+  height: 52px;
+}
+.icon-8r {
+  background-image: url(../img/sprite.png);
+  background-position: -72px -329px;
+  width: 52px;
+  height: 52px;
+}
+.icon-9 {
+  background-image: url(../img/sprite.png);
+  background-position: -144px -329px;
+  width: 52px;
+  height: 52px;
+}
+.icon-9r {
+  background-image: url(../img/sprite.png);
+  background-position: -216px -329px;
+  width: 52px;
+  height: 52px;
+}
+.icon-pdf {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 110px;
+  height: 117px;
+}
+.icon-scale {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -137px;
+  width: 100px;
+  height: 100px;
+}
+.icon-xls {
+  background-image: url(../img/sprite.png);
+  background-position: -130px 0px;
+  width: 109px;
+  height: 116px;
+}

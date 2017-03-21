@@ -76,7 +76,7 @@ gulp.task('sprite', function () {
   gulp.src(path.src.sprite)
       .pipe(spritesmith({
         imgName: 'sprite.png',
-        cssName: 'sprite.less',
+        cssName: 'sprite.css',
         imgPath: '../img/sprite.png',
         padding: 20
       }))

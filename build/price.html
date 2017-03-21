@@ -2,16 +2,83 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Category</title>
+	<title>price</title>
 	<meta name="keywords" content="Test" />
 	<meta name="description" content="Test">
 	<meta name="author" content="ittech"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-	//= template/head.html
+	
+	
+	<link rel="stylesheet" href="css/vendor.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Philosopher:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+	
+	<!-- Js -->
+	<!-- <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script> -->
+	<!-- <script src="js/jquery.min.js"></script> -->
 </head>
 <body>
-	//= template/aside.html
-	//= template/header.html
+	<div id="menu" class="aside-menu">
+		<nav >
+			<ul class="list list_colum">
+				<li class="list__item list__item_border-bottom"><a href="">главная</a></li>
+				<li class="list__item list__item_border-bottom list__item_arr">
+					<a href="">продукция</a>
+					<ul class="sub-menu list list_colum">
+						<li class="list__item list__item_border-bottom"><a href="">металлочерепица</a></li>
+						<li class="list__item list__item_border-bottom"><a href="">профнастил</a></li>
+						<li class="list__item list__item_border-bottom"><a href="">фальцевая картина</a></li>
+						<li class="list__item list__item_border-bottom"><a href="">водосточная система</a></li>
+						<li class="list__item list__item_border-bottom"><a href="">комплектующие элементы кровли</a></li>
+						<li class="list__item list__item_border-bottom"><a href="">софит</a></li>
+						<li class="list__item list__item_border-bottom"><a href="">штакетник</a></li>
+						<li class="list__item list__item_border-bottom"><a href="">сопутствующие товары</a></li>
+					</ul>
+				</li>
+				<li class="list__item list__item_border-bottom"><a href="">галерея</a></li>
+				<li class="list__item list__item_border-bottom"><a href="">прайс</a></li>
+				<li class="list__item list__item_border-bottom"><a href="">инструкции</a></li>
+				<li class="list__item list__item_border-bottom"><a href="">о нас</a></li>
+			</ul>
+		</nav>
+	</div>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<a class="header__logo" href="">
+					<img src="img/logo.png" alt="breststal">
+				</a>
+				<nav class="header__menu">
+					<ul class="list">
+						<li class="list__item list__item_border-bottom"><a href="">главная</a></li>
+						<li class="list__item list__item_border-bottom list__item_arr">
+							<a href="">продукция</a>
+							<ul class="sub-menu list list_colum">
+								<li class="list__item list__item_border-bottom"><a href="">металлочерепица</a></li>
+								<li class="list__item list__item_border-bottom"><a href="">профнастил</a></li>
+								<li class="list__item list__item_border-bottom"><a href="">фальцевая картина</a></li>
+								<li class="list__item list__item_border-bottom"><a href="">водосточная система</a></li>
+								<li class="list__item list__item_border-bottom"><a href="">комплектующие элементы кровли</a></li>
+								<li class="list__item list__item_border-bottom"><a href="">софит</a></li>
+								<li class="list__item list__item_border-bottom"><a href="">штакетник</a></li>
+								<li class="list__item list__item_border-bottom"><a href="">сопутствующие товары</a></li>
+							</ul>
+						</li>
+						<li class="list__item list__item_border-bottom"><a href="">галерея</a></li>
+						<li class="list__item list__item_border-bottom"><a href="">прайс</a></li>
+						<li class="list__item list__item_border-bottom"><a href="">инструкции</a></li>
+						<li class="list__item list__item_border-bottom"><a href="">о нас</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__contacts">
+				<a href="tel:+375291234567"><i class="icon-calendar"></i>пн-пт: 8:30-13:00, 14:00-17:30</a>
+				<a href="tel:+375291234567"><i class="icon-phone"></i>+375291234567</a>
+				<a href=""><i class="icon-call"></i>заказать звонок</a>
+			</div>
+			<div class="hamburger"></div>
+		</div>
+	</header>
 
 	<div id="panel" class="content">
 
@@ -311,127 +378,46 @@
 						</ul><!--category-list-->
 					</div><!--category-list-wrapper-->
 					<div class="col-md-8">
-						<div class="category-products">
-							<div class="category-product">
-								<div class="category-product__img">
-									<img data-src="img/braun.png" data-title="title1" src="img/item.png" alt="item">
-									<div class="category-product__img-scale">
-										<i class="icon icon-scale"></i>
-									</div>
-								</div>
-								<div class="category-product__info">
-									<ul class="category-product__body">
-										<li> Общая ширина: 9999 мм</li>
-										<li> Общая ширина: 9999 мм</li>
-										<li>Толщина полотна: 0,9 мм</li>
-										<li>Длина модуля черепицы: 999 мм</li>
-										<li>Высота ребра: 99 мм</li>
-									</ul>
-									<div class="category-product__header">
-										<span class="icon-down">диаманд плюс </span>
-									</div>
-								</div>
-							</div>
-
-							<div class="category-product">
-								<div class="category-product__img">
-									<img data-src="img/braun.png" data-title="title2" src="img/item.png" alt="item">
-									<div class="category-product__img-scale">
-										<i class="icon icon-scale"></i>
-									</div>
-								</div>
-								<div class="category-product__info">
-									<ul class="category-product__body">
-										<li> Общая ширина: 9999 мм</li>
-										<li> Общая ширина: 9999 мм</li>
-										<li>Толщина полотна: 0,9 мм</li>
-										<li>Длина модуля черепицы: 999 мм</li>
-										<li>Высота ребра: 99 мм</li>
-									</ul>
-									<div class="category-product__header">
-										<span class="icon-down">диаманд плюс </span>
-									</div>
-								</div>
-							</div>
-
-							<div class="category-product">
-								<div class="category-product__img">
-									<img data-src="img/braun.png" data-title="title2" src="img/item.png" alt="item">
-									<div class="category-product__img-scale">
-										<i class="icon icon-scale"></i>
-									</div>
-								</div>
-								<div class="category-product__info">
-									<ul class="category-product__body">
-										<li> Общая ширина: 9999 мм</li>
-										<li> Общая ширина: 9999 мм</li>
-										<li>Толщина полотна: 0,9 мм</li>
-										<li>Длина модуля черепицы: 999 мм</li>
-										<li>Высота ребра: 99 мм</li>
-									</ul>
-									<div class="category-product__header">
-										<span class="icon-down">диаманд плюс </span>
-									</div>
-								</div>
-							</div>
-						</div><!--category-products-->
-						<div class="category__pages"></div>		
+						
 					</div>
 				</div>
 			</div>
 		</section><!--category-->
 
-		<section class="quality">
+		<section class="our-partners">
 			<div class="container">
-				<h2 class="title title_dark title_bordered-long">гарантии качества</h2>
-				<p>Тщательный подбор материалов и контроль за исполнением.</p>
-				<p class="box-bordered">На СООО “Брестсталь” здесь возможно будет текст, вероятно будет текст, здесь возможно будет текст, вероятно будет текст, здесь возможно будет текст, вероятно будет текст, здесь возможно будет текст, вероятно будет текст, здесь возможно будет текст, вероятно будет текст, здесь возможно будет текст, вероятно будет текст, здесь возможно будет текст, вероятно будет текст, здесь возможно будет текст, вероятно будет текст, здесь возможно будет текст, вероятно будет текст, поэтому мы работаем только с лучшими производителями стали</p>
-
-				<div class="row quality__about box-bordered">
-					<div class="col-md-5 quality__img">
-						<img src="img/sloy.png" alt="layer">
-					</div>
-					<div class="col-md-7 quality__descr">
-						<p> Проходит испытания на применение исключительно на STEel Steel на металлический слой, который представляет собой смесь из 95% цинка и 5 % алюминия , обеспечивая непревзойденную защиту от коррозии , даже по краям разреза. Толщина покрытия органического продукта Colorcoat HPS200® Ultra 200 микрон</p>
-						<ul>
-							<li>- в два раза большая стойкость цвета и глянца по сравнению с пластизольным покрытием</li>
-							<li>- уникальная стойкость на срезанных краях</li>
-							<li>- гарантия Confidex® на срок до 40 лет</li>
-							<li>- Продукт не требует проверки или технического обслуживания</li>
-							<li>- Гарантированная максимальная прочность</li>
-						</ul>
-					</div>
-				</div><!--quality__about-->
-				<p>Мы постоянно расширяем круг контактов</p>
-				<p class="box-bordered">	Здесь возможно будет текст, о географии партнёров вероятно будет текст, здесь возможно будет текст, вероятно будет текст, здесь возможно будет текст, вероятно будет текст, здесь возможно будет текст, вероятно будет текст, здесь возможно будет текст, вероятно будет текст, здесь возможно будет текст, вероятно будет текст, здесь возможно будет текст, вероятно будет текст, здесь возможно будет текст.</p>
-			</div>
-			<section class="our-partners">
-				<div class="container">
-					<h2>Наши партнёры:</h2>
-					<div class="partners">
-						<div class="partners__item"><img src="img/arcelor.png" alt="arcelor"></div>
-						<div class="partners__item"><img src="img/nlmk.png" alt="nlmk"></div>
-						<div class="partners__item"><img src="img/tata.png" alt="tata"></div>
-						<div class="partners__item"><img src="img/thyssenkrupp.png" alt="thyssenkrupp"></div>
-						<div class="partners__item"><img src="img/uss.png" alt="uss"></div>
-					</div>
+				<h2>Наши партнёры:</h2>
+				<div class="partners">
+					<div class="partners__item"><img src="img/arcelor.png" alt="arcelor"></div>
+					<div class="partners__item"><img src="img/nlmk.png" alt="nlmk"></div>
+					<div class="partners__item"><img src="img/tata.png" alt="tata"></div>
+					<div class="partners__item"><img src="img/thyssenkrupp.png" alt="thyssenkrupp"></div>
+					<div class="partners__item"><img src="img/uss.png" alt="uss"></div>
 				</div>
-			</section>
-		</section><!--quality-->
-
-
-		//= template/footer.html
-	</div><!--content-->
-
-		<div class="pop-up">
-			<div class="pop-up__body">
-				<img src="img/product.jpg" alt="">
-				<div class="pop-up__footer">
-					металлочерепица: <span class="pop-up__title">диаманд плюс</span><i class="pop-up__close"></i>
-				</div>	
 			</div>
-		</div>
+		</section>
 
-	//= template/foot.html
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__inner">
+					<a class="footer__logo" href="">
+						<img src="img/logo.png" alt="breststal">
+					</a>
+					<nav class="list footer__menu">
+						<a href="" class="list__item list__item_dark">главная</a>
+						<a href="" class="list__item list__item_dark">продукция</a>
+						<a href="" class="list__item list__item_dark">галерея</a>
+						<a href="" class="list__item list__item_dark">прайс</a>
+						<a href="" class="list__item list__item_dark">инструкции</a>
+						<a href="" class="list__item list__item_dark">о нас</a>
+					</nav>
+					<p> 2015 &copy;</p>
+				</div>
+			</div>
+		</footer>
+	</div><!--content-->
+	<script src="js/vendor.js"></script>
+	<script src="js/custom.js"></script>
 </body>
 </html>
