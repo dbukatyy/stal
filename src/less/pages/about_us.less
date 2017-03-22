@@ -1,0 +1,65 @@
+.about-us {
+	color: @c-dgray;
+	padding: 10vh 0 15vh;
+	&__item {
+		display: flex;
+
+		&_filtered {
+			background: rgba(255,255,255,.8);
+		}
+
+		&_right {
+			.about-us__num {
+				order: 1;
+			}
+
+			.about-us__txt {
+				padding-left: 0;
+				padding-right: 5%;
+				text-align: right;
+			}	
+		}
+
+		&_bordered {
+			border-top: 1px solid @c-lgray;
+		}
+	}
+
+	&__num {
+		width: 15%;
+		font-size: 8em;
+		color: @c-gray;
+		text-align: center;
+		position: relative;
+
+		&:after {
+			content: '';
+			display: inline-block;
+			height: 5px;
+			width: 100%;
+			background: @c-blue;
+			position: absolute;
+			bottom: 30px;
+			left: 0;
+		}
+	}
+
+	&__txt {
+		width: 85%;
+		padding-top: 20px;
+		padding-left: 5%;
+	}
+}
+
+.stability {
+	height: 615px;
+	background: url('../img/aboutbg1.png') 50% 10% no-repeat;
+	background-size: cover;
+}
+
+.production {
+	height: 450px;
+	background: url('../../img/factory2.png') 50% 10% no-repeat;
+	background-size: cover;
+	margin: 70px 0;
+}

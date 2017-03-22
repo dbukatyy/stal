@@ -1,5 +1,13 @@
+@media all and (max-width: 1700px) {
+	.consultant {
+		right: 0;
+	}
+}
+
 @media all and (max-width: 1200px) {
-	
+	.first {
+		background-size: 130%;
+	}
 }
 
 
@@ -22,6 +30,10 @@
 		&__inner {
 			justify-content: center;
 		}
+
+		&__logo {
+			height: 75px;
+		}
 	}
 	.header__menu {
 		display: none;
@@ -40,12 +52,17 @@
 	.partners__item {
 		flex-basis: 17%;
 	}
+
+	.first {
+		background-size: 180%;
+	}
 }
 
 @media all and (max-width: 769px) {
 
 	.first {
 		text-align: center;
+		background-size: 260%;
 
 		&__inner {
 			height: auto;
@@ -105,6 +122,23 @@
 
 	.text-left {
 		order: -1;
+	}
+
+	.consultant {
+		right: 0;
+		left: 0;
+		width: 240px;
+		margin: 0 auto;
+	}
+
+	.header {
+		&__logo {
+			height: 76px;
+		}
+
+		&__contacts {
+			top: -15px;
+		}
 	}
 }
 
@@ -180,8 +214,13 @@
 	.header {
 		padding: 50px 0 0;
 
+		&_sticked {
+			padding: 0;
+		}
+
 		&__contacts {
 			top: -40px;
+			text-align: right;
 			a:first-child {
 				display: block;
 				margin-bottom: 5px;
@@ -191,6 +230,10 @@
 }
 
 @media all and (max-width: 480px) {
+
+	.first {
+		background-size: 320%;
+	}
 	.header__contacts {
 	} 
 

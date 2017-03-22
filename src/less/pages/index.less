@@ -90,13 +90,13 @@ textarea:focus {
 
 .consultant {
 	position: absolute;
-	top: 500px;
+	top: 50vh;
 	right: -20%;
 
 	button {
 		font-size: .6em;
 		padding: 5px 10px;
-		background: rgba(255,255,255,.8);
+		background: rgba(255,255,255,.9);
 		border: none;
 		color: @c-dblue3; 
 		font-weight: 600;
@@ -433,5 +433,30 @@ textarea:focus {
 
 .map {
 	height: 490px;
+}
+
+@media all and (max-width: 1700px) {
+	.consultant {
+		right: 0;
+	}
+}
+
+@media all and (max-width: 769px) {
+	.consultant {
+		right: 0;
+		left: 0;
+		width: 240px;
+		margin: 0 auto;
+	}
+
+	.header {
+		&__logo {
+			height: 76px;
+		}
+
+		&__contacts {
+			top: -15px;
+		}
+	}
 }
 

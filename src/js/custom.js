@@ -103,7 +103,7 @@ jQuery(document).ready(function () {
     		$('.header').removeClass('header_sticked');
     	}
 
-  		$('.first').css('background-position-y',(90- scrollTop*1.6));
+  		$('.first').css('background-position-y',(90 - scrollTop*1.6));
 	});
 
 	var fixed = document.querySelector('.header');
@@ -149,6 +149,21 @@ jQuery(document).ready(function () {
  		
     	$(this).css('display', 'none');
     });
+
+
+ 	$('.gallery__item').fancybox({
+ 		overlayShow: true,
+ 		overlayColor: '#fff',
+ 		helpers : {
+    		title : {
+    			type : 'inside'
+    		}
+    	},
+    	padding : 0
+    	// tpl: {
+    	// 	closeBtn : '<a title="Close" class="pop-up__close" href="javascript:;"></a>'
+    	// }
+ 	});
 
 });
 

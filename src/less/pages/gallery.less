@@ -1,0 +1,52 @@
+a.pop-up__close {
+	top: auto;
+	bottom: 20px;
+	background: @c-gray;
+
+	&:before {
+		background: @c-gray;
+	}
+}
+
+.gallery {
+	padding: 80px 0 20px;
+	&__wrapp {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__item {
+		display: block;
+		width: 32%;
+		height: 350px;
+		position: relative;
+		margin: 5px;
+		overflow: hidden;
+		text-align: center;
+
+		img {
+			height: 100%;
+			width: auto;
+		}
+	}
+
+	&__title {
+		display: inline-block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(20,133,195,.9);
+		text-transform: uppercase;
+		color: @c-white;
+		padding: 5px 15px;
+		text-align: right;
+		font-size: .8em;
+
+		 .icon-down:before {
+		 	transform: rotate(-90deg);
+		 }
+	}
+}
