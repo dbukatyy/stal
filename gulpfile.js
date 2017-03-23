@@ -111,7 +111,7 @@ gulp.task('html', function () {
 gulp.task('js', function () {
     gulp.src(path.src.js) //Найдем наш main файл
         .pipe(rigger()) //Прогоним через rigger
-        .pipe(uglify()) //Сожмем наш js
+        // .pipe(uglify()) //Сожмем наш js
         .pipe(gulp.dest(path.build.js)) //Выплюнем готовый файл в build
         .pipe(notify('js save ok'))
         .pipe(reload({stream: true})); //И перезагрузим сервер
@@ -145,7 +145,7 @@ gulp.task('style', function () {
     gulp.src(path.src.style) //Выберем наш less
         .pipe(less()) //Скомпилируем
         .pipe(prefixer()) //Добавим вендорные префиксы
-        .pipe(cssmin()) //Сожмем
+        // .pipe(cssmin()) //Сожмем
         .pipe(gulp.dest(path.build.css)) //И в build
         .pipe(notify('less save ok'))
         .pipe(reload({stream: true}));

@@ -1,10 +1,13 @@
 jQuery(document).ready(function () {
 
+
+// consultant
+
 	$('.consultant button').on('click', function (e) {
 		$('.consultant__form').slideToggle();
 	});
 
-
+// products menu toggle item
 	$('.first-block').on('click', function (e) {
 		e.preventDefault();
 		$('a[data-slide="second"]').css('display', 'none');
@@ -16,8 +19,8 @@ jQuery(document).ready(function () {
 		$('a[data-slide="first"]').css('display', 'none');
 		$('a[data-slide="second"]').css('display', 'inline-block');
 	});
-	// aside-menu
 
+// aside-menu
 	 var slideout = new Slideout({
 	    'panel': document.getElementById('panel'),
 	    'menu': document.getElementById('menu'),
@@ -76,7 +79,7 @@ jQuery(document).ready(function () {
 	// 	$(this).siblings('.pagination__item').removeClass('pagination__item_active');
 	// });
 
-
+// pallete toggle
 	$('.category-list__link_droped').on('click', function (e) {
 		e.preventDefault();
 
@@ -92,10 +95,11 @@ jQuery(document).ready(function () {
 		$('.pallite-about').not('[data-color=' + color + ']').hide();
 	});
 
+// fixed menu
 	$(document).on('scroll', function (e) {
 		var scrollTop = $(this).scrollTop();
 
-    	if (scrollTop > 200) {
+    	if (scrollTop > 300) {
 
    			$('.header').addClass('header_sticked');
 
@@ -106,6 +110,7 @@ jQuery(document).ready(function () {
   		$('.first').css('background-position-y',(90 - scrollTop*1.6));
 	});
 
+// slide to aside menu
 	var fixed = document.querySelector('.header');
 
     slideout.on('translate', function(translated) {
@@ -130,6 +135,8 @@ jQuery(document).ready(function () {
       fixed.style.transition = '';
     });
 
+
+//product description
     $('.category-product__header').on('click', function (e) {
     	$(this).closest('.category-product__info').toggleClass('category-product__info_active');
     });
@@ -146,11 +153,10 @@ jQuery(document).ready(function () {
     });
 
  	$('.pop-up').on('click', function (e) {
- 		
     	$(this).css('display', 'none');
     });
 
-
+// gallery
  	$('.gallery__item').fancybox({
  		overlayShow: true,
  		overlayColor: '#fff',
@@ -160,9 +166,6 @@ jQuery(document).ready(function () {
     		}
     	},
     	padding : 0
-    	// tpl: {
-    	// 	closeBtn : '<a title="Close" class="pop-up__close" href="javascript:;"></a>'
-    	// }
  	});
 
 });
