@@ -245,14 +245,20 @@
 	margin: 0;
 	padding: 40px 15px 20px;
 	top: 100%;	
-	background: rgba(255,255,255,.9);
+	background: rgba(255,255,255,1);
 	z-index: 10;
 	font-size: .8em;
-	align-items: flex-start;
+	align-items: stretch;
 	display: none;
+	left: 0;
+	right: -170px;
 
 	.list__item {
 		line-height: 1em;
-		margin: 10px 0;
+		padding: 15px 0;
+		margin: 0;
+		border-bottom: 1px solid @c-gray;
+		text-transform: uppercase;
+		font-size: .8em;
 	}
 }

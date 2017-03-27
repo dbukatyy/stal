@@ -16,15 +16,21 @@
 		width: 2px;
 		background: @c-gray;
 		position: absolute;
-		top: 0;
-		bottom: 80px;
+		top: 6px;
+		bottom: 0;
 		left: 390px;
 	}
 	
 	padding: 60px 0;
 
 	&-list {
+		&_short {
+			.pallite-link {
+				display: none;
+			}
+		}
 		padding: 0;
+		margin: 0;
 
 		&__item {
 			padding: 10px 0;
@@ -306,7 +312,7 @@
 .pallite {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: flex-start;
 	width: 300px;
 
 	&-wraper {
@@ -323,9 +329,9 @@
 	}
 
 	&__item {
-		margin: 5px;
-		width: 40px;
-		height: 40px;
+		margin: 7px;
+		width: 46px;
+		height: 46px;
 		background: #000;
 		cursor: pointer;
 		outline: 1px solid @c-gray;
@@ -399,7 +405,7 @@
 		display: none;
 
 		p {
-			margin: 10px 0;
+			margin: 0;
 		}
 
 		&__name {

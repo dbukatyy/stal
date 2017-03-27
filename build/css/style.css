@@ -335,17 +335,23 @@
   margin: 0;
   padding: 40px 15px 20px;
   top: 100%;
-  background: rgba(255, 255, 255, 0.9);
+  background: #ffffff;
   z-index: 10;
   font-size: .8em;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   display: none;
+  left: 0;
+  right: -170px;
 }
 .sub-menu .list__item {
   line-height: 1em;
-  margin: 10px 0;
+  padding: 15px 0;
+  margin: 0;
+  border-bottom: 1px solid #c3c3c3;
+  text-transform: uppercase;
+  font-size: .8em;
 }
 .aside-menu {
   padding-top: 20vh;
@@ -887,12 +893,16 @@ textarea:focus {
   width: 2px;
   background: #c3c3c3;
   position: absolute;
-  top: 0;
-  bottom: 80px;
+  top: 6px;
+  bottom: 0;
   left: 390px;
 }
 .category-list {
   padding: 0;
+  margin: 0;
+}
+.category-list_short .pallite-link {
+  display: none;
 }
 .category-list__item {
   padding: 10px 0;
@@ -1150,9 +1160,9 @@ textarea:focus {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   width: 300px;
 }
 .pallite-wraper {
@@ -1168,9 +1178,9 @@ textarea:focus {
   box-shadow: 2px 2px 10px #000;
 }
 .pallite__item {
-  margin: 5px;
-  width: 40px;
-  height: 40px;
+  margin: 7px;
+  width: 46px;
+  height: 46px;
   background: #000;
   cursor: pointer;
   outline: 1px solid #c3c3c3;
@@ -1241,7 +1251,7 @@ textarea:focus {
   display: none;
 }
 .pallite-about p {
-  margin: 10px 0;
+  margin: 0;
 }
 .pallite-about__name {
   display: -webkit-box;
@@ -1406,7 +1416,7 @@ textarea:focus {
           order: 1;
 }
 .about-us__item_right .about-us__txt {
-  padding-left: 0;
+  padding-left: 5px;
   padding-right: 5%;
   text-align: right;
 }
