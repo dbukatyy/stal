@@ -132,7 +132,7 @@
   position: absolute;
   top: 0px;
   right: 10px;
-  font-size: .7em;
+  font-size: .75em;
 }
 .header__contacts a {
   color: #c3c3c3;
@@ -434,10 +434,6 @@ textarea:focus {
   padding-bottom: 175px;
 }
 .first {
-  background: url('../img/top-bg.jpg') no-repeat;
-  background-position: 50% 90px ;
-  background-size: cover;
-  background-attachment: fixed;
   color: #fff;
   position: relative;
 }
@@ -452,8 +448,10 @@ textarea:focus {
   left: 0;
   right: 0;
   background: url('../img/top.png') no-repeat, url('../img/bottom.png') no-repeat;
-  background-position: 50% 145px, 50% 105%;
+  background-position: 50% 145px, 50% 100%;
   background-size: 100%;
+  z-index: 1;
+  pointer-events: none;
 }
 .first__inner {
   height: 100vh;
@@ -467,9 +465,23 @@ textarea:focus {
   color: #4e4e4e;
   position: absolute;
   top: 180px;
+  z-index: 2;
 }
 .first__txt p {
   margin: 0;
+}
+.slides {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.slide {
+  height: 100vh;
+  background-position: 50% 90px ;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .consultant {
   position: absolute;
@@ -535,6 +547,11 @@ textarea:focus {
 .we-do__title {
   margin-bottom: 70px;
 }
+.we-do span {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+}
 .title {
   font-size: 1.67em;
   text-transform: uppercase;
@@ -587,7 +604,7 @@ textarea:focus {
   display: none;
 }
 .products__menu a {
-  font-size: .8em;
+  font-size: .7em;
   text-transform: uppercase;
 }
 .products__menu-nav {
@@ -1421,7 +1438,7 @@ textarea:focus {
   text-align: right;
 }
 .about-us__item_bordered {
-  border-top: 1px solid #efefef;
+  border-top: 1px solid #c3c3c3;
 }
 .about-us__num {
   width: 15%;
@@ -1454,7 +1471,7 @@ textarea:focus {
   height: 450px;
   background: url('../../img/factory2.png') 50% 10% no-repeat;
   background-size: cover;
-  margin: 70px 0;
+  margin: 35px 0;
 }
 a.pop-up__close {
   top: auto;
@@ -1549,6 +1566,14 @@ a.pop-up__close:before {
 @media all and (max-width: 1700px) {
   .consultant {
     right: 0;
+  }
+  .first__txt {
+    font-size: .9em;
+    width: 65%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 155px;
   }
 }
 @media all and (max-width: 1200px) {

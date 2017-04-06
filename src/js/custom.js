@@ -1,5 +1,12 @@
 jQuery(document).ready(function () {
-
+$('.slides').slick({
+  dots: true,
+  arrows: false,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  speed: 900
+});
 
 // consultant
 
@@ -107,7 +114,7 @@ jQuery(document).ready(function () {
     		$('.header').removeClass('header_sticked');
     	}
 
-  		$('.first').css('background-position-y',(90 - scrollTop*1.6));
+  		$('.slide').css('background-position-y',(90 - scrollTop*1.1));
 	});
 
 // slide to aside menu
@@ -167,6 +174,71 @@ jQuery(document).ready(function () {
     	},
     	padding : 0
  	});
+// validate form
+
+    $('#call-send').on('click', function (e) {
+		e.preventDefault();
+
+		var msg = $('.call__msg'),
+            // message = $('.form-alert .msg'),
+            form = $(this).closest('.reserv'),
+            inputs =  form.find('.reserv-input'),
+            // errorMsg = form.find('.error'),
+            valid = validate();
+
+
+        function validate () {
+       
+            var valid = true;
+
+            // console.log(inputs );
+
+            inputs.each( function () {
+
+                if ( $(this).val() === '' ) {
+                     // console.log($(this).val());
+                    valid = false;
+                    return false;
+                } 
+            });
+               
+            return valid;
+        }
+
+        function showMessage(data) {
+            msg.html(data);
+            msg.addClass('msg_active');
+        }
+
+        if (valid) {
+
+             $.ajax({    
+                url: form.attr('action'),
+                data: form.serialize(),
+                type: 'POST',
+                success: function(data){
+                    showMessage(data);
+                    msg.css('background', 'rgba(39,179,101,.8)');
+                },
+                error: function(){
+                    showMessage('Ошибка отправки. Пожалуйста, повторите попытку.');
+                    msg.css('background', 'rgba(158,26,47,.8)');
+                },
+                complete: function(){
+                    setTimeout(function () {
+                        msg.removeClass('msg_active');
+                    }, 3000);
+                    form[0].reset();
+                }
+            });
+         } else {
+            showMessage('Пожалуйста, заполните все поля.')
+            msg.css('background', 'rgba(158,26,47,.8)');
+            setTimeout( function () {
+                msg.removeClass('msg_active');
+            }, 5000);
+         }
+	});
 
 });
 

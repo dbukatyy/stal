@@ -40,10 +40,10 @@ textarea:focus {
 // first
 .first {
 	// background: #000;
-	background: url('../img/top-bg.jpg') no-repeat;
-	background-position: 50% 90px ;
-	background-size: cover;
-	background-attachment: fixed;
+	// background: url('../img/top-bg.jpg') no-repeat;
+	// background-position: 50% 90px ;
+	// background-size: cover;
+	// background-attachment: fixed;
 	color: @c-white;
 	position: relative;
 
@@ -59,9 +59,10 @@ textarea:focus {
 		left: 0;
 		right: 0;
 		background: url('../img/top.png') no-repeat,url('../img/bottom.png') no-repeat  ;
-		background-position: 50% 145px, 50% 105%;
+		background-position: 50% 145px, 50% 100%;
 		background-size: 100%;
-
+		z-index: 1;
+		pointer-events: none;
 	}
 
 	&__inner {
@@ -81,6 +82,7 @@ textarea:focus {
 		color: @c-dgray;
 		position: absolute;
 		top: 180px;
+		z-index: 2;
 
 		p {
 			margin: 0;
@@ -88,6 +90,22 @@ textarea:focus {
 	}
 }
 
+.slides {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+}
+
+.slide {
+	height: 100vh;
+	background-position: 50% 90px ;
+	background-size: cover;
+	background-repeat: no-repeat;
+	// background-attachment: fixed;
+}
 .consultant {
 	position: absolute;
 	top: 50vh;
@@ -161,6 +179,12 @@ textarea:focus {
 	&__title {
 		margin-bottom: 70px;
 	}
+
+	span {
+		display: inline-block;
+		width: 100%;
+		text-align: right;
+	}
 }
 
 .title {
@@ -230,7 +254,7 @@ textarea:focus {
 		}
 
 		a {
-			font-size: .8em;
+			font-size: .7em;
 			text-transform: uppercase;
 		}
 
