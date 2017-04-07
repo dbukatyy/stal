@@ -437,9 +437,6 @@ textarea:focus {
   color: #fff;
   position: relative;
 }
-.first_active {
-  background-position: 50% -100px;
-}
 .first:before {
   content: '';
   position: absolute;
@@ -482,6 +479,9 @@ textarea:focus {
   background-position: 50% 90px ;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.slide_active {
+  background-position: 50% -100px;
 }
 .consultant {
   position: absolute;
@@ -907,12 +907,15 @@ textarea:focus {
 .category .border-line {
   content: '';
   display: inline-block;
-  width: 2px;
+  width: 1px;
   background: #c3c3c3;
   position: absolute;
   top: 6px;
-  bottom: 0;
+  bottom: 95px;
   left: 390px;
+}
+.category_short .border-line {
+  bottom: 20px;
 }
 .category-list {
   padding: 0;
@@ -1038,16 +1041,16 @@ textarea:focus {
 .category-product__info {
   position: absolute;
   top: 85%;
-  bottom: 10px;
+  bottom: 0;
   padding: 5px;
-  left: 10px;
-  right: 10px;
+  left: 0;
+  right: 0;
   overflow: hidden;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
 .category-product__info_active {
-  top: 10px;
+  top: 0;
 }
 .category-product__info_active .category-product__header {
   background: #fff;
@@ -1091,12 +1094,19 @@ textarea:focus {
   bottom: 0;
   left: 0;
   right: 0;
-  list-style: none;
   font-size: .9em;
   margin: auto;
-  padding: 20px;
+  padding: 40px;
   -webkit-transition: all .5s;
   transition: all .5s;
+}
+.category-product__body ul {
+  list-style: none;
+  padding: 0;
+}
+.category-product__body p {
+  text-transform: uppercase;
+  margin-top: 0;
 }
 .category-product:hover .category-product__img-scale {
   display: -webkit-box;
@@ -1129,6 +1139,8 @@ textarea:focus {
 }
 .quality__descr ul {
   list-style: none;
+  padding: 0;
+  margin-bottom: 0;
 }
 .our-partners {
   color: #4e4e4e;
@@ -1145,8 +1157,8 @@ textarea:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 40px 0;
-  margin-bottom: 50px;
+  padding: 20px 0;
+  margin-bottom: 60px;
   border-top: 1px solid #c3c3c3;
   border-bottom: 1px solid #c3c3c3;
 }
@@ -1168,7 +1180,7 @@ textarea:focus {
 }
 .box-bordered {
   padding-bottom: 50px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   border-bottom: 1px solid #c3c3c3;
 }
 .pallite {
@@ -1378,9 +1390,11 @@ textarea:focus {
   position: relative;
   margin: auto;
   min-width: 320px;
+  max-width: 90%;
+  max-height: 90%;
   background: #fff;
   border: 1px solid #c3c3c3;
-  padding: 30px;
+  padding: 10% 30px;
 }
 .pop-up__footer {
   text-align: left;
@@ -1527,6 +1541,13 @@ a.pop-up__close:before {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
+.instructions .gallery .gallery__item img {
+  height: auto;
+  width: 100%;
+}
+.instructions .fancybox-close {
+  display: none ;
+}
 .prices-info {
   padding-left: 50px;
 }
@@ -1631,6 +1652,9 @@ a.pop-up__close:before {
   .first {
     background-size: 180%;
   }
+  .first__txt {
+    font-size: .7em;
+  }
   .gallery__item {
     width: 48%;
   }
@@ -1672,6 +1696,25 @@ a.pop-up__close:before {
     height: auto;
     min-height: 100vh;
     padding-bottom: 20px;
+  }
+  .first:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('../img/bottom.png') no-repeat;
+    background-position: 50% 100%;
+    background-size: 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
+  .first__txt {
+    padding: 20px 0;
+    top: 100px;
+    background: #fff;
+    width: 100%;
   }
   .manager {
     width: 100%;
@@ -1781,7 +1824,8 @@ a.pop-up__close:before {
     margin-bottom: 5px;
   }
   .first__txt {
-    font-size: 1em;
+    top: 120px;
+    padding: 20px;
   }
   .products__item {
     width: 49%;
@@ -1838,12 +1882,12 @@ a.pop-up__close:before {
   }
 }
 @media all and (max-width: 480px) {
-  .first {
-    background-size: 320%;
-  }
   .header .container:before,
   .header .container:after {
     display: none;
+  }
+  .header__contacts {
+    font-size: .6em;
   }
   .header__logo {
     width: 200px;
@@ -1883,13 +1927,6 @@ a.pop-up__close:before {
   }
   .category-list__link {
     font-size: .9em;
-  }
-  .first:before {
-    background-position: 50% 120px, 50% 100%;
-  }
-  .first__txt {
-    font-size: .9em;
-    top: 5px;
   }
   .footer__logo {
     height: 65px;

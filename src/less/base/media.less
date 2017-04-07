@@ -80,6 +80,10 @@
 
 	.first {
 		background-size: 180%;
+
+		&__txt {
+			font-size: .7em;
+		}
 	}
 
 	.gallery {
@@ -128,6 +132,27 @@
 			height: auto;
 			min-height: 100vh;
 			padding-bottom: 20px;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: url('../img/bottom.png') no-repeat  ;
+			background-position:  50% 100%;
+			background-size: 100%;
+			z-index: 1;
+			pointer-events: none;
+		}
+
+		&__txt {
+			padding: 20px 0;
+			top: 100px;
+			background: @c-white;
+			width: 100%;
 		}
 	}
 
@@ -259,7 +284,8 @@
 
 	.first {
 		&__txt {
-			font-size: 1em;
+			top: 120px;
+			padding: 20px;
 		}
 	}
 
@@ -344,13 +370,15 @@
 
 @media all and (max-width: 480px) {
 
-	.first {
-		background-size: 320%;
-	}
+	
 	.header {
 		.container:before,
 		.container:after {
 			display: none;
+		}
+
+		&__contacts {
+			font-size: .6em;
 		}
 	} 
 
@@ -402,12 +430,9 @@
 	}
 
 	.first {
-		&:before {
-			background-position: 50% 120px, 50% 100%;
-		}
 		&__txt {
-    		font-size: .9em;
-    		top: 5px;
+    		// font-size: .9em;
+    		// top: 5px;
 		}
 	}
 

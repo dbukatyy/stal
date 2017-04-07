@@ -7,78 +7,11 @@
 	<meta name="description" content="Test">
 	<meta name="author" content="ittech"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-	
-	
-	<link rel="stylesheet" href="css/vendor.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Philosopher:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
-	
-	<!-- Js -->
-	<!-- <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script> -->
-	<!-- <script src="js/jquery.min.js"></script> -->
+	//= template/head.html
 </head>
 <body>
-	<div id="menu" class="aside-menu">
-		<nav >
-			<ul class="list list_colum">
-				<li class="list__item list__item_border-bottom"><a href="">главная</a></li>
-				<li class="list__item list__item_border-bottom list__item_arr">
-					<a href="">продукция</a>
-					<ul class="sub-menu list list_colum">
-						<li class="list__item list__item_border-bottom"><a href="">металлочерепица</a></li>
-						<li class="list__item list__item_border-bottom"><a href="">профнастил</a></li>
-						<li class="list__item list__item_border-bottom"><a href="">фальцевая картина</a></li>
-						<li class="list__item list__item_border-bottom"><a href="">водосточная система</a></li>
-						<li class="list__item list__item_border-bottom"><a href="">комплектующие элементы кровли</a></li>
-						<li class="list__item list__item_border-bottom"><a href="">софит</a></li>
-						<li class="list__item list__item_border-bottom"><a href="">штакетник</a></li>
-						<li class="list__item list__item_border-bottom"><a href="">сопутствующие товары</a></li>
-					</ul>
-				</li>
-				<li class="list__item list__item_border-bottom"><a href="">галерея</a></li>
-				<li class="list__item list__item_border-bottom"><a href="">прайс</a></li>
-				<li class="list__item list__item_border-bottom"><a href="">инструкции</a></li>
-				<li class="list__item list__item_border-bottom"><a href="">о нас</a></li>
-			</ul>
-		</nav>
-	</div>
-	<header class="header">
-		<div class="container">
-			<div class="header__inner">
-				<a class="header__logo" href="">
-					<img src="img/logo.png" alt="breststal">
-				</a>
-				<nav class="header__menu">
-					<ul class="list">
-						<li class="list__item list__item_border-bottom"><a href="index.html">главная</a></li>
-						<li class="list__item list__item_border-bottom list__item_arr">
-							<a href="products.html">продукция</a>
-							<ul class="sub-menu list list_colum">
-								<li class="list__item "><a href="category.html">металлочерепица</a></li>
-								<li class="list__item "><a href="">профнастил</a></li>
-								<li class="list__item "><a href="">фальцевая картина</a></li>
-								<li class="list__item "><a href="">водосточная система</a></li>
-								<li class="list__item "><a href="">комплектующие элементы кровли</a></li>
-								<li class="list__item "><a href="">софит</a></li>
-								<li class="list__item "><a href="">штакетник</a></li>
-								<li class="list__item "><a href="">сопутствующие товары</a></li>
-							</ul>
-						</li>
-						<li class="list__item list__item_border-bottom"><a href="gallery.html">галерея</a></li>
-						<li class="list__item list__item_border-bottom"><a href="price.html">прайс</a></li>
-						<li class="list__item list__item_border-bottom"><a href="instructions.html">инструкции</a></li>
-						<li class="list__item list__item_border-bottom"><a href="about_us.html">о нас</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="header__contacts">
-				<a href="tel:+375291234567"><i class="icon-calendar"></i>пн-пт: 8:30-13:00, 14:00-17:30</a>
-				<a href="tel:+375291234567"><i class="icon-phone"></i>+375291234567</a>
-				<a href=""><i class="icon-call"></i>заказать звонок</a>
-			</div>
-			<div class="hamburger"></div>
-		</div>
-	</header>
+	//= template/aside.html
+	//= template/header.html
 
 	<div id="panel" class="content">
 
@@ -325,7 +258,7 @@
 						<div class="category-products">
 							<div class="category-product">
 								<div class="category-product__img">
-									<img data-src="img/itembig.png" data-title="title1" src="img/item.png" alt="item">
+									<img data-src="img/item.png" data-title="title1" src="img/item.png" alt="item">
 									<div class="category-product__img-scale">
 										<i class="icon icon-scale"></i>
 									</div>
@@ -371,6 +304,76 @@
 								</div>
 							</div>
 
+							<div class="category-product">
+								<div class="category-product__img">
+									<img data-src="img/braun.png" data-title="title2" src="img/item.png" alt="item">
+									<div class="category-product__img-scale">
+										<i class="icon icon-scale"></i>
+									</div>
+								</div>
+								<div class="category-product__info">
+									<div class="category-product__body">
+										<p>технические характеристики</p>
+										<ul class="">
+											<li>- Общая ширина: 9999 мм</li>
+											<li>- Общая ширина: 9999 мм</li>
+											<li>- Толщина полотна: 0,9 мм</li>
+											<li>- Длина модуля черепицы: 999 мм</li>
+											<li>- Высота ребра: 99 мм</li>
+										</ul>
+									</div>
+									<div class="category-product__header">
+										<span class="icon-down">диаманд плюс </span>
+									</div>
+								</div>
+							</div>
+
+							<div class="category-product">
+								<div class="category-product__img">
+									<img data-src="img/braun.png" data-title="title2" src="img/item.png" alt="item">
+									<div class="category-product__img-scale">
+										<i class="icon icon-scale"></i>
+									</div>
+								</div>
+								<div class="category-product__info">
+									<div class="category-product__body">
+										<p>технические характеристики</p>
+										<ul class="">
+											<li>- Общая ширина: 9999 мм</li>
+											<li>- Общая ширина: 9999 мм</li>
+											<li>- Толщина полотна: 0,9 мм</li>
+											<li>- Длина модуля черепицы: 999 мм</li>
+											<li>- Высота ребра: 99 мм</li>
+										</ul>
+									</div>
+									<div class="category-product__header">
+										<span class="icon-down">диаманд плюс </span>
+									</div>
+								</div>
+							</div>
+							<div class="category-product">
+								<div class="category-product__img">
+									<img data-src="img/braun.png" data-title="title2" src="img/item.png" alt="item">
+									<div class="category-product__img-scale">
+										<i class="icon icon-scale"></i>
+									</div>
+								</div>
+								<div class="category-product__info">
+									<div class="category-product__body">
+										<p>технические характеристики</p>
+										<ul class="">
+											<li>- Общая ширина: 9999 мм</li>
+											<li>- Общая ширина: 9999 мм</li>
+											<li>- Толщина полотна: 0,9 мм</li>
+											<li>- Длина модуля черепицы: 999 мм</li>
+											<li>- Высота ребра: 99 мм</li>
+										</ul>
+									</div>
+									<div class="category-product__header">
+										<span class="icon-down">диаманд плюс </span>
+									</div>
+								</div>
+							</div>
 							<div class="category-product">
 								<div class="category-product__img">
 									<img data-src="img/braun.png" data-title="title2" src="img/item.png" alt="item">
@@ -440,24 +443,7 @@
 		</section><!--quality-->
 
 
-		<footer class="footer">
-			<div class="container">
-				<div class="footer__inner">
-					<a class="footer__logo" href="">
-						<img src="img/logo.png" alt="breststal">
-					</a>
-					<nav class="list footer__menu">
-						<a href="" class="list__item list__item_dark">главная</a>
-						<a href="" class="list__item list__item_dark">продукция</a>
-						<a href="" class="list__item list__item_dark">галерея</a>
-						<a href="" class="list__item list__item_dark">прайс</a>
-						<a href="" class="list__item list__item_dark">инструкции</a>
-						<a href="" class="list__item list__item_dark">о нас</a>
-					</nav>
-					<p> 2015 &copy;</p>
-				</div>
-			</div>
-		</footer>
+		//= template/footer.html
 	</div><!--content-->
 
 		<div class="pop-up">
@@ -469,7 +455,6 @@
 			</div>
 		</div>
 
-	<script src="js/vendor.js"></script>
-	<script src="js/custom.js"></script>
+	//= template/foot.html
 </body>
 </html>

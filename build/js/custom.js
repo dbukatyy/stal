@@ -1,12 +1,13 @@
 jQuery(document).ready(function () {
-$('.slides').slick({
-  dots: true,
-  arrows: false,
-  infinite: true,
-  autoplay: true,
-  autoplaySpeed: 5000,
-  speed: 900
-});
+  
+  $('.slides').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 900
+  });
 
 // consultant
 
@@ -114,7 +115,10 @@ $('.slides').slick({
     		$('.header').removeClass('header_sticked');
     	}
 
-  		$('.slide').css('background-position-y',(90 - scrollTop*1.1));
+      if ( $(window).width() > 992 ) {
+  		  $('.slide').css('background-position-y',(90 - scrollTop*1.1));
+      }
+
 	});
 
 // slide to aside menu

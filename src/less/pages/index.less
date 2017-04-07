@@ -47,10 +47,6 @@ textarea:focus {
 	color: @c-white;
 	position: relative;
 
-	&_active {
-		background-position: 50% -100px ;
-	}
-
 	&:before {
 		content: '';
 		position: absolute;
@@ -104,7 +100,10 @@ textarea:focus {
 	background-position: 50% 90px ;
 	background-size: cover;
 	background-repeat: no-repeat;
-	// background-attachment: fixed;
+
+	&_active {
+		background-position: 50% -100px ;
+	}
 }
 .consultant {
 	position: absolute;
